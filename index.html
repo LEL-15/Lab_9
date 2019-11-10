@@ -120,17 +120,6 @@
           </div>
         </div>
       </div>
-
-      <div class="col-2">
-        <div id = "6", class="card">
-          <img class="card-img-top" src="" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"><!-- List Day of the Week Here --></h5>
-            <p class="card-text">High:<!--List Temperature High --> <br>
-              Low: <!-- List Temperature Low --></p>
-          </div>
-        </div>
-      </div>
 		</div>
 		<br>
 	</div>
@@ -200,7 +189,7 @@
 
 				*/
 				var week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; //This is a helper array to help convert the day of the week [0-7] to a named value [Sunday - Saturday]
-        for (var i = 0; i < 7; i++){
+        for (var i = 0; i < 6; i++){
           var day = document.getElementById(i).children;
           day[0].src = "img/" + data.daily.data[i].icon + ".png";
           var day1 = day[1].children;
